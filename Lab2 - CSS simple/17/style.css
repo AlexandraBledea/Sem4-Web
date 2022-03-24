@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(228, 165, 236);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.level0 {
+    background-color: rgb(218, 71, 169);
+    height: 100%;
+    width: 260px;
+}
+
+.level0-item {
+    font-size: large;
+    padding-bottom: 50px;
+}
+
+li {
+    cursor:pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:15px;
+}
+
+.level1{
+    background-color: rgb(194, 154, 181);
+    display:none;
+    margin-left: 180px;
+    position: absolute;
+    width: 320px;
+}
+
+.level2{
+    background-color: rgb(218, 71, 169);
+    display:none;    
+    margin-left: 205px;
+    position: absolute;
+    width: 320px;
+}
+
+.level0 li:hover > .level1{
+    display:block;
+}
+
+.level1 li:hover > .level2{
+    display: block;
+}

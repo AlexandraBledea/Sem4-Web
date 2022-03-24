@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+}
+
+.glow{
+    color: antiquewhite;
+    text-shadow: 0 0 15px rgb(0, 255, 21);
+}
+
+.fire{
+    /* -o-animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-name: animation; */
+    animation: animation 1s alternate infinite;
+    color: antiquewhite;
+}
+
+@keyframes animation
+{
+from {text-shadow: 0 0 1px #fefcc9,
+  1px -1px 2px #feec85,
+  -2px -2px 3px #ffae34,
+  2px -4px 4px #ec760c,
+  -2px -6px 5px #cd4606,
+  0 -8px 6px #973716,
+  1px -9px 7px #451b0e;}
+to {text-shadow: 0 0 3px #fefcc9,
+  2px -2px 6px #fefcc9,
+  -4px -4px 8px #feec85,
+  4px -8px 8px #ffae34,
+  -4px -10px 12px #ec760c,
+  2 -16px 14px #cd4606,
+  2px -18px 16px  #973716;}
+}
+
+.shadow{
+    color: antiquewhite;
+    text-shadow: -7px 7px 17px #ff00ea;
+}
+
+.underline{
+    color: antiquewhite;
+    text-shadow: 0 2px 0 #ff8800;
+}
