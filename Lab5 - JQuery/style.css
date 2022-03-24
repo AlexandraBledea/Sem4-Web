@@ -1,0 +1,31 @@
+
+
+ul{
+    position: absolute;
+    top: 390px;
+    left: -240px;
+}
+
+li{
+    position: absolute;
+    list-style: none;
+}
+
+#popUpDiv {
+
+    display: none;     /* Initially we don't display the div */
+    position: fixed; 
+    padding-top: 200px;    /* We center the content of the div using the padding */   
+    left: 0;  
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#popUpImg {
+    margin: auto;  /*We use margin auto in order to center the image into the div */
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
