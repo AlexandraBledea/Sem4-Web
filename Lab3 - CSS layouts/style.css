@@ -1,0 +1,437 @@
+ @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    font-family: inherit;
+    color: #fff;
+}
+
+b{
+    font-weight: bolder;
+}
+
+.tp-search-banner{
+    background-image: url("tp-banner.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 1903px;
+    height: 410px;
+    padding-top: 0px;
+    margin-bottom: 35px;
+
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left-bar{
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    width: 58%;
+    padding-top:4px;
+    
+    font-size: 12.5px;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.right-bar{
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top:4px;
+
+    font-size: 12.5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.left-link{
+    background-color: transparent;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.right-link{
+    background-color: transparent;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.tp-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.image-logo{
+    width: 210px;
+    height: 122.767px;
+    cursor: pointer;
+}
+
+.search-text{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.search-bold-text{
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.search-box{
+    position: relative;
+    top:-1px;
+    width: 694.1px;
+    height: 44px;
+}
+
+.input{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    height: 40px;
+
+    width: 675.1px;
+    border: 1px solid #fff; 
+    border-radius: 15px;
+    outline: none;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 2px;
+}
+
+.tp-banner-links{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner-link{
+    font-size: 18px;
+    padding-left: 18.9167px;
+    padding-right: 18.9167px;
+    cursor: pointer;
+}
+
+#search-icon{
+    float: right;
+    position: relative;
+    top: -30px;
+    right: 11px;
+    color: rgb(83, 83, 83);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.middle-photo{
+    margin-left: 320.5px;
+    margin-right: 320.5px;
+    cursor: pointer;
+}
+
+.middle-item{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.prime-packs{
+    display: flex;
+    justify-content: center;
+}
+
+.heading-line{
+    /* text-align: center; */
+    position: relative;
+    right: 320px;
+    font-size: 22px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87); 
+}
+
+.bold-heading-line{
+    font-weight: bolder;
+}
+
+h1:after {               /* the line after Prime Packs */
+    content: "";
+    display: inline-block;
+    position: relative;
+    bottom: 4px;
+    height: 0.3em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    border-top: 0.5px solid gray;
+    padding-right: 480px;
+}
+
+.slides{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+}
+
+
+.prime-pack{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #eee;
+    margin-left: -290px;
+    margin-right:-290px;
+}
+
+.rounded{
+    border-radius: 3pt;
+}
+
+.rounded-img{
+    border-top-left-radius: 3pt;
+    border-top-right-radius: 3pt;
+    width: 100%;
+    cursor: pointer;
+}
+
+.ribbon-title{
+    display: block;
+    text-align: center;
+    background: #f0506e;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1;
+    padding: 9px 0px 0px;
+    border-top-right-radius: 4px;
+    width: 75px;
+}
+
+.ribbon-title:before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    left: -6px;
+    top: 0;
+    background: #000;
+    border-radius: 8px 0px 0px 0px;
+}
+
+.ribbon {
+    position: absolute;
+    margin-top: -6px;
+    margin-left: 210px;
+}
+
+.ribbon:after {
+    position: absolute;
+    content: "";
+    border-left: 42px solid transparent;
+    border-right: 34px solid transparent;
+    border-top: 10px solid #f0506e;
+}
+
+.card-body{
+    font-family: 'Varela Round', sans-serif;
+    padding: 5pt 10pt 10pt 10pt;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.card-body h4{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 22px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.video-details{
+    width: 100%;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.video-details-web-dev{
+    width: 100%;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative;
+    top: -21px;
+}
+
+p span {
+    padding-right: 0;
+}
+
+p {
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.web-dev-p{
+    position: relative;
+    top: -21px;
+    margin-top: -10px;
+}
+
+.p{
+    margin-top: -10px;
+}
+
+.video-details span{
+    float: right;
+}
+
+.video-details-web-dev span{
+    float: right;
+}
+
+.ebook-price-web-dev b{
+    font-size: 18px;
+    color: rgba(0,0,0,.80);
+    font-weight: 600;
+}
+
+.ebook-price-web-dev {
+    position: relative;
+    top: -21px;
+    font-size: 13px;
+    color: rgba(0,0,0,.80);
+    text-align: left;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+
+.ebook-price b{
+    font-size: 18px;
+    color: rgba(0,0,0,.80);
+    font-weight: 600;
+}
+
+.ebook-price {
+    font-size: 13px;
+    color: rgba(0,0,0,.80);
+    text-align: left;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+.price {
+    padding-right: 2px;
+}
+
+.actual-price {
+    color: #f00;
+    text-decoration: line-through;
+}
+
+.ebook-discount-web-dev{
+    position: relative;
+    top: -21px;
+}
+
+.ebook-discount-web-dev b span, .ebook-discount b span {
+    color: #248a0f;
+    font-weight: normal;
+}
+
+.ebook-discount-web-dev span, .ebook-discount span{
+    font-size: 12px;
+    font-weight: normal;
+    color: (0,0,0,.80);
+    padding-right: 2px;
+}
+
+.ebook-off-web-dev, .ebook-off{
+    display: inline;
+    font-size: 11px !important;
+    color: #fff;
+    line-height: 22px;
+    background-color: #989898;
+    padding: 3px 3px 2px 3px;
+}
+
+.btn-success-web-dev, .btn-success{
+    background: linear-gradient(to left, #3f8830, #46a033);
+    color: #fff;
+    text-align: center;
+    padding: 3px 10px;
+    margin: 2px 0px 0px 0px;
+    border: 1px solid #3f8830;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-success-web-dev{
+    position: relative;
+    top:-21px;
+}
+
+.end-button{
+    text-align: right;
+    margin-right: 315px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.button-view-more{
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 550;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding:10px 15px;
+    border-radius: 4px;
+}
