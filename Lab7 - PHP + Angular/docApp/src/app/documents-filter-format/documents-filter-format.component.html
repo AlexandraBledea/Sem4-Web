@@ -1,0 +1,40 @@
+<section class="browsing">
+    <label>
+      <!-- <select name="Severity Filter" [(ngModel)]="selectedOption" (change)="getFilteredDocsByType()">
+        <option class = "type-filter" selected>choose type</option>
+        <option *ngFor="let type of types">
+            {{type}}
+        </option>
+      </select> -->
+      <select name="Severity Filter" [(ngModel)]="selectedOption" (change)="getFilteredDocsByFormat()">
+        <option class = "format-filter" selected>choose format</option>
+        <option *ngFor ="let format of formats">
+            {{format}}
+        </option>
+      </select>
+    </label>
+    <br><br>
+    <table>
+      <thead>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>NumberPages</th>
+      <th>Type</th>
+      <th>Format</th>
+      </thead>
+      <tbody>
+      <tr *ngFor="let doc of filteredDocs">
+        <td>{{doc.id}}</td>
+        <td>{{doc.title}}</td>
+        <td>{{doc.author}}</td>
+        <td>{{doc.numberPages}}</td>
+        <td>{{doc.type}}</td>
+        <td>{{doc.format}}</td>
+      </tr>
+      </tbody>
+    </table>
+    <p *ngIf="prevOption"> Previous documents filter with type: {{prevOption}} </p>
+    <br>
+</section>
+  

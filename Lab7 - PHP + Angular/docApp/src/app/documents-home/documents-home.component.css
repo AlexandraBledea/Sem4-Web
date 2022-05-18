@@ -1,0 +1,38 @@
+button {
+    margin: 5px;
+    padding: 7px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+    cursor: pointer;
+  }
+  button.active {
+    color: #039be5;
+  }
+  
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .content {
+    display: flex;
+    margin: 20px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  

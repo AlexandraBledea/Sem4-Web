@@ -1,0 +1,72 @@
+
+<div class="crud">
+    <section style="float: left; display: inline;">
+      <br>
+      <table class="all-documents">
+        <thead>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>AUTHOR</th>
+        <th>NUMBERPAGES</th>
+        <th>TYPE</th>
+        <th>FORMAT</th>
+        <th> </th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let doc of documents">
+          <td>{{doc.id}}</td>
+          <td>{{doc.title}}</td>
+          <td>{{doc.author}}</td>
+          <td>{{doc.numberPages}}</td>
+          <td>{{doc.type}}</td>
+          <td>{{doc.format}}</td>
+          <td>
+            <button class='btnUpdate' type='button' (click)="onUpdate(doc)">Update</button>
+            <button class='btnDelete' type='button' (click)="onDelete(doc.id)">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <p> </p>
+      <br>
+    </section>
+  
+    <section id="add_form" style="float: left; display: block; padding-left: 50px; padding-top: 12px">
+      <form action="" method="get">
+        <input id="id1" type="text" #newID placeholder="id" style="margin: 5px; width: 191px;">
+        ID<br> 
+        <input id="title1" type="text" #newTitle placeholder="title" style="margin: 5px; width: 191px">
+        Title<br>
+        <input id="author1" type="text" #newAuthor placeholder="author" style="margin: 5px; width: 191px">
+        Author<br>
+        <input id="numberPages1" type="text" #newNumberPages placeholder="numberPages" style="margin: 5px; width: 191px">
+        numberPages<br>
+        <input id="type1" type="text" #newType placeholder="type" style="margin: 5px; width: 191px">
+        Type<br>
+        <input id="format1" type="text" #newFormat placeholder="format" style="margin: 5px; width: 191px">
+        Format<br>>
+        <button id="submitAddBtn" style="margin-top: 10px" (click)="addDocument(newID,newTitle,newAuthor,newNumberPages,newType,newFormat)">
+          Add new document</button>
+      </form>
+    </section>
+  
+    <section id="update_form" style="float: left; display: none; padding-left: 50px; padding-top: 12px">
+      <form action="" method="get">
+        <input id="id2" type="text" #uID placeholder="id" readonly style="margin: 5px; width: 191px">
+        ID<br>
+        <input id="title2" type="text" #uTitle placeholder="title" style="margin: 5px; width: 191px">
+        Title<br>
+        <input id="author2" type="text" #uAuthor placeholder="author" style="margin: 5px; width: 191px">
+        Author<br>
+        <input id="numberPages2" type="text" #uNumberPages placeholder="numberPages" style="margin: 5px; width: 191px">
+        NumberPages<br>
+        <input id="type2" type="text" #uType placeholder="type" style="margin: 5px; width: 191px">
+        Type<br>
+        <input id="format2" type="text" #uFormat placeholder="format" style="margin: 5px; width: 191px">
+        Format<br>
+        <button id="submitUpdateBtn" style="margin-top: 10px" (click)="updateDocument(uID,uTitle,uAuthor,uNumberPages,uType,uFormat)">
+          Update</button>
+      </form>
+    </section>
+</div>
+  
