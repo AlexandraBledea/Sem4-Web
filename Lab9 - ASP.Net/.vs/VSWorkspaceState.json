@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\lab9",
+    "\\lab9\\lab9",
+    "\\lab9\\lab9\\App_Start",
+    "\\lab9\\lab9\\Controllers",
+    "\\lab9\\lab9\\DataAbstractionLayer"
+  ],
+  "SelectedNode": "\\lab9\\lab9\\Controllers\\AuthenticationController.cs",
+  "PreviewInSolutionExplorer": false
+}
